@@ -1,0 +1,8 @@
+.jumbotron {
+  padding: 30px 15px;
+  background: $primary;
+  border-radius: 2px;
+  &-small {
+    padding: 15px;
+  }
+}

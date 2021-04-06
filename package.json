@@ -1,0 +1,35 @@
+{
+  "name": "Prueba_TechBoss",
+  "version": "1.0.0",
+  "description": "proyecto de prueba para TechBoss Sas",
+  "author": " Keyci Padilla",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "sh deploy.sh"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/firebase": "^5.0.3",
+    "bootstrap-vue": "^2.9.0",
+    "chart.js": "^2.9.3",
+    "firebase": "^7.13.0",
+    "nuxt": "^2.12.1",
+    "sass": "^1.26.3",
+    "vue-chartjs": "^3.5.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.0",
+    "core-js": "^2.0.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2"
+  }
+}

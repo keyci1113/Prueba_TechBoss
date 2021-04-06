@@ -1,0 +1,86 @@
+.theme--light.v-application {
+  background:$backgrey  !important;
+  color: rgba(0, 0, 0, 0.87);
+}
+.app-root {
+  background-color: $backgrey;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.layout-content {
+  flex: 1;
+  margin-top: 144px;
+}
+.main-wrapper {
+  max-width: 1440px;
+  margin: 30px auto 0;
+}
+
+@include media-breakpoint-down(lg) {
+  .layout-content {
+    margin-top: 85px;
+  }
+}
+@include media-breakpoint-down(md) {
+  .main-wrapper {
+    margin: 60px auto 0;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .layout-content {
+    margin-top: 118px;
+  }
+}
+.container {
+  @include make-container-max-widths(
+    (
+      lg: 1380px
+    )
+  );
+  &-md {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+  &-sm {
+    @include make-container();
+    @include make-container-max-widths(
+      (
+        lg: 920px
+      )
+    );
+  }
+}
+
+// Scroll Bar And Selection
+*::selection {
+  background: $secondary;
+  color: #fff;
+}
+*::-moz-selection {
+  background: $secondary;
+  color: #fff;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $backgrey;
+  &:hover {
+    background-color: $backgrey;
+  }
+}
+
+.section {
+  padding: 40px 0;
+  &-lg {
+    padding: 60px 0;
+  }
+  &-sm {
+    padding: 20px 0;
+  }
+}
